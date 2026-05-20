@@ -1,7 +1,7 @@
 import "./App.css";
-import Navbar from "./component/navbar/Navbar";
+import Navbar from "./component/navbar/Navbar.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Shop from "./Pages/Shop";
+import Shop from "./Pages/Shop.jsx";
 import LoginSignup from "./Pages/LoginSignup.jsx";
 import ShopCategory from './Pages/ShopCategory.jsx'
 import Product from './Pages/Product.jsx'
