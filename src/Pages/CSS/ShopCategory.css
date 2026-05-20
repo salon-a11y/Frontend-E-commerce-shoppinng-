@@ -1,0 +1,125 @@
+/* SHOP CATEGORY PAGE */
+
+.shop-categorypage{
+    width: 100%;
+    padding: 40px 80px;
+    background: #f9f9f9;
+}
+
+/* BANNER */
+
+.shopcategory-banner{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+/* SORT SECTION */
+
+.shopcategory-indexsort{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shopcategory-indexsort p{
+    font-size: 18px;
+    color: #444;
+}
+
+.shopcategory-indexsort span{
+    font-weight: 600;
+    color: #111;
+}
+
+/* SORT BUTTON */
+
+.shopcategory-sort{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid #d0d0d0;
+    border-radius: 40px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.shopcategory-sort:hover{
+    background: #f1f1f1;
+}
+
+.shopcategory-img{
+    width: 14px;
+}
+
+/* PRODUCTS GRID */
+
+.shopcategory-products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+    .shopcategory-products{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:900px){
+
+    .shop-categorypage{
+        padding: 30px 40px;
+    }
+
+    .shopcategory-products{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .shop-categorypage{
+        padding: 20px;
+    }
+
+    .shopcategory-indexsort{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shopcategory-products{
+        grid-template-columns: 1fr;
+    }
+
+    .shopcategory-indexsort p{
+        font-size: 15px;
+    }
+
+    .shopcategory-sort{
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto ;
+    width: 233px;
+ height: 69px;
+ border-radius: 75px;
+ background:  #ededed;
+ color: #787878;
+ font-size: 18px;
+ font-weight: 500;    
+}

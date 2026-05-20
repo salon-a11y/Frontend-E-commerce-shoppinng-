@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* NEWSLETTER SECTION */
+
+.newletter{
+    width: 80%;
+    margin: 100px auto;
+    padding: 60px 40px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newletter h1{
+    color: #222;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.newletter p{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.newletter div{
+    width: 100%;
+    max-width: 650px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.newletter input{
+    width: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #616161;
+}
+
+.newletter input::placeholder{
+    color: #999;
+}
+
+.newletter button{
+    width: 180px;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    background: #000;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.newletter button:hover{
+    background: #ff4141;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .newletter{
+        width: 95%;
+        padding: 40px 20px;
+    }
+
+    .newletter h1{
+        font-size: 28px;
+    }
+
+    .newletter p{
+        font-size: 15px;
+    }
+
+    .newletter div{
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .newletter input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+
+    .newletter button{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+    }
+}

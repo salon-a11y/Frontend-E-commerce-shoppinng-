@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* FOOTER SECTION */
+
+.footer{
+    width: 100%;
+    padding: 60px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    background: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* LOGO */
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img{
+    width: 60px;
+}
+
+.footer-logo p{
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* LINKS */
+
+.footer-link{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-link li{
+    transition: 0.3s;
+}
+
+.footer-link li:hover{
+    color: #ff4141;
+}
+
+/* SOCIAL ICONS */
+
+.footer-social-icon{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons-container{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-icons-container:hover{
+    background: #ff4141;
+    transform: translateY(-5px);
+}
+
+.footer-icons-container img{
+    width: 24px;
+}
+
+/* COPYRIGHT */
+
+.footer-copy-write{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-copy-write hr{
+    width: 80%;
+    border: none;
+    height: 1px;
+    background: #ccc;
+}
+
+.footer-copy-write p{
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .footer-logo p{
+        font-size: 24px;
+    }
+
+    .footer-link{
+        gap: 20px;
+        font-size: 15px;
+    }
+
+    .footer-icons-container{
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-copy-write p{
+        text-align: center;
+        font-size: 14px;
+    }
+}
