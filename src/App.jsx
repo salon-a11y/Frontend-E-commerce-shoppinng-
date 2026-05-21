@@ -1,5 +1,6 @@
 import "./App.css";
-import Navbar from "./component/navbar/Navbar.jsx";
+// import Navbar from "./component/Navbar/Navbar.jsx";
+import Navbar from './Component/Navbar/Navbar.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Shop from "./Pages/Shop.jsx";
 import LoginSignup from "./Pages/LoginSignup.jsx";
