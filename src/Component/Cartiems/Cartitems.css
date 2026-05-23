@@ -1,0 +1,240 @@
+.cartitems {
+  width: 85%;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 20px;
+  color: #555;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 0;
+}
+
+.cartitems-format {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  transition: 0.3s;
+}
+
+.cartitems-format:hover {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.carticon-product-icon {
+  width: 90px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #f3f3f3;
+  padding: 5px;
+}
+
+.cartitems-format p {
+  font-size: 17px;
+  color: #333;
+}
+
+.cartitem-quantity {
+  width: 60px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #ff4141;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cartitem-quantity:hover {
+  background: #e63737;
+}
+
+.remove-icon {
+  width: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-icon:hover {
+  transform: scale(1.2);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #e2e2e2;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .cartitems {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .cartitems-format-main {
+    display: none;
+  }
+
+  .cartitems-format {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 12px;
+    padding: 25px 0;
+  }
+
+  .carticon-product-icon {
+    margin: auto;
+  }
+
+  .cartitem-quantity {
+    margin: auto;
+  }
+
+  .remove-icon {
+    margin: auto;
+  }
+
+}
+
+/* Bottom Section */
+
+/* .cartitem-down {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+} */
+
+/* Cart Total Box */
+/* Cart Bottom Section */
+
+.cartitem-down {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* Cart Total Box */
+
+.cartitem-total {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.cartitem-total h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.cartitem-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.cartitem-total hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.cartitem-total button {
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Promo Code Box */
+
+.cartitem-promocode {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.cartitem-promocode p {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+/* Promo Input */
+
+/* .Cartitem-promobox {
+  display: flex;
+}
+
+.Cartitem-promobox input {
+  flex: 1;
+  height: 50px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.Cartitem-promobox button {
+  width: 120px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+} */
+
+.Cartitem-promobox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.Cartitem-promobox input {
+  flex: 1;
+  height: 50px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.Cartitem-promobox button {
+  width: 120px;
+  height: 50px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
