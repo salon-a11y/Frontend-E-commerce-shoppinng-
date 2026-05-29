@@ -40,8 +40,8 @@ totalAmount += itemInfo.new_price * cartitem[item]
 
  
       }
-      return totalAmount;
     }
+    return totalAmount;
   }
    const getTotalcartItems = () =>{
     let totalitem =0;

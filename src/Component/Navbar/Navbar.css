@@ -20,7 +20,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: nowrap;
 
     background: #ffffff;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -31,7 +30,7 @@
 }
 
 /* =========================
-   LOGO  (always left)
+   LOGO
 ========================= */
 
 .nav-logo{
@@ -54,7 +53,7 @@
 }
 
 /* =========================
-   MENU  (centre, desktop only)
+   MENU
 ========================= */
 
 .nav-menu{
@@ -100,7 +99,7 @@
 }
 
 /* =========================
-   LOGIN & CART  (always right)
+   LOGIN & CART
 ========================= */
 
 .nav-login-cart{
@@ -113,7 +112,7 @@
 /* LOGIN BUTTON */
 
 .nav-login-cart a{
-    text-decoration: none;       /* remove underline if button wrapped in <a> */
+    text-decoration: none;
 }
 
 .nav-login-cart button{
@@ -129,34 +128,18 @@
 
     font-size: 14px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;       /* no underline on text */
-    text-transform: none;
 
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: 0.3s;
 
-    /* perfect centering & navbar alignment */
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;      /* sits flush with cart icon */
-    line-height: 1;
-    padding: 0;
-
-    /* strip browser defaults */
-    appearance: none;
-    -webkit-appearance: none;
 }
 
 .nav-login-cart button:hover{
     background: #e63636;
     transform: scale(1.05);
-}
-
-.nav-login-cart button:focus{
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 65, 65, 0.3);
 }
 
 /* =========================
@@ -170,8 +153,6 @@
     justify-content: center;
     cursor: pointer;
 }
-
-/* CART ICON */
 
 .nav-cart-container img{
     width: 36px;
@@ -188,16 +169,39 @@
     position: absolute;
     top: -8px;
     right: -10px;
+
     width: 20px;
     height: 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 50%;
     background: #ff4141;
     color: white;
+
     font-size: 11px;
     font-weight: 600;
+}
+
+/* =========================
+   DROPDOWN ICON
+========================= */
+
+.nav-dropdown{
+    display: none;
+    width: 25px;
+    cursor: pointer;
+
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+
+/* ICON ROTATE */
+
+.open{
+    transform: rotate(90deg);
 }
 
 /* =========================
@@ -220,16 +224,14 @@
 }
 
 /* =========================
-   TABLET  –  menu on second row
+   TABLET
 ========================= */
 
-@media (max-width: 900px){
+@media (max-width: 800px){
 
     .navbar{
         padding: 12px 24px;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .nav-logo{
@@ -240,16 +242,31 @@
         order: 2;
     }
 
-    /* menu full-width on second row */
+    .nav-dropdown{
+        display: block;
+    }
+
+    /* MOBILE MENU */
+
     .nav-menu{
         order: 3;
-        display: flex;
+
+        display: none;
         width: 100%;
-        justify-content: center;
-        gap: 28px;
-        padding: 8px 0 4px;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 18px;
+
+        padding: 12px 0;
+
         border-top: 1px solid #f0f0f0;
-        margin-top: 6px;
+        margin-top: 10px;
+    }
+
+    .nav-menu-visible{
+        display: flex;
     }
 
     .nav-logo img{
@@ -275,7 +292,6 @@
     .navbar{
         padding: 10px 16px;
         min-height: 60px;
-        flex-wrap: wrap;
     }
 
     .nav-logo img{
@@ -304,20 +320,9 @@
         width: 18px;
         height: 18px;
         font-size: 10px;
+
         top: -6px;
         right: -8px;
-    }
-
-    /* menu second row on mobile */
-    .nav-menu{
-        order: 3;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-        padding: 6px 0 2px;
-        border-top: 1px solid #f0f0f0;
-        margin-top: 4px;
     }
 
     .nav-menu li{
@@ -329,7 +334,7 @@
    SMALL MOBILE
 ========================= */
 
-@media (max-width: 380px){
+@media (max-width: 360px){
 
     .navbar{
         padding: 8px 12px;
