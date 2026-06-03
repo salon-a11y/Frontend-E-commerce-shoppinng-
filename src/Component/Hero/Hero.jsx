@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Hero.css'
 import hand_icon from '../assets/hand_icon.png'
 import arrow_icon from'../assets/arrow.png'
 import hero_image from '../assets/hero_image.png'
+import NewCollections from '../NEW colllections/NewCollections'
+import { useNavigate } from 'react-router-dom'
 const Hero = () => {
+ const navigate = useNavigate();
+
+  function latestbtnhandler(){
+     navigate('/new-collection')
+  }
   return (
     <div className='hero'>
       <div className="hero-left">
@@ -17,8 +24,8 @@ const Hero = () => {
     <p>for Everyone</p>
   </div>
   <div className="hero-latest-btn">
-    <div>Latest Collection</div>
-    <img src={arrow_icon} alt="" />
+    <button onClick={latestbtnhandler} className="hero-latest-btn2">Latest Collection <img src={arrow_icon} alt="" /></button>
+    {/* <img src={arrow_icon} alt="" /> */}
   </div>
       </div>
       <div className="hero-right">

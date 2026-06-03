@@ -1,6 +1,7 @@
 import React from 'react'
 import './Newletter.css'
 const Newsletter = () => {
+  
   return (
     <div className='newletter'>
       <h1>Get Exclusive offers on Your Email</h1>
