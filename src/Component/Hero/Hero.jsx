@@ -25,7 +25,7 @@ const Hero = () => {
   </div>
   <div className="hero-latest-btn">
     <button onClick={latestbtnhandler} className="hero-latest-btn2">Latest Collection <img src={arrow_icon} alt="" /></button>
-    {/* <img src={arrow_icon} alt="" /> */}
+  
   </div>
       </div>
       <div className="hero-right">
